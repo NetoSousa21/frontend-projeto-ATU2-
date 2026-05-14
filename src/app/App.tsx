@@ -5,7 +5,7 @@ import { MarketplaceProvider } from './contexts/MarketplaceContext';
 import { RewardsProvider } from './contexts/RewardsContext';
 import { ProtectedRoute } from './components/ProtectedRoute';
 import { Toaster } from 'sonner';
-
+import { ConfirmarEmailPage } from "./pages/ConfirmarEmailPage";
 import { LandingPage } from './pages/LandingPage';
 import { LoginPage } from './pages/LoginPage';
 import { CadastroPage } from './pages/CadastroPage';
@@ -49,6 +49,11 @@ export default function App() {
                     <DashboardPage />
                   </ProtectedRoute>
                 }
+              />
+
+              <Route
+                path="/confirmar-email"
+                element={<ConfirmarEmailPage />}
               />
 
               <Route
